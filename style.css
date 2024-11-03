@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    background: #FAF4F2;
+}
+.w-1140{
+    width: 1140px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 48px;
+}
+
+/*-------------------------------about------------------------------*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+.about__info{
+    padding-top: 12px;
+    padding-left: 32px;
+}
+.about__info h1{
+    color: #222;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62px; /* 155% */
+    width: 475px;
+}
+.about__info p{
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    padding-top: 7px;
+    margin-bottom: 54px;
+    width: 509px;
+    height: 144px;
+}
+.about__info img{
+    width: 240px;
+    height: 48px;
+    padding-right: 26px;
+}
+.buttons{
+    padding-top: 8px;
+    padding-left: 32px;
+}
+.buttons button{
+    width: 153px;
+    height: 55px;
+    border-radius: 10px;
+    border: 2px solid #FF9B70;
+    color: rgba(34, 34, 34, 0.50);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 30px;
+}
+.main__active-button{
+    border-radius: 10px;
+    background: #FF2950;
+    color: #F9F9F9;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    width: 151px;
+}
+
+/*----------------------------advert---------------------------*/
+.advert{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+    background: #FF7315;
+    height: 519px;
+    margin: 125px 0;
+    color: #F9F9F9;
+}
+.advert div {
+    background: #FF7315;
+}
+.advert div p{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; /* 187.5% */
+    background: #FF7315;
+}
+.advert img{
+    margin: 93px 32px 97px;
+    background: #FF7315;
+}
+.advert .count{
+    font-size: 72px;
+    margin-top: -22px;
+    background: #FF7315;
+}
+.advert .glad{
+    font-size: 48px;
+    margin: 19px 0;
+    background: #FF7315;
+}
+.advert .text{
+    margin-right: 76px;
+}
+/*-------------------------------advantages----------------------------------*/
+.advantages h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between; /* Расположение карточек в ряд */
+    align-items: flex-start; /* Вертикальное выравнивание карточек */
+    flex-wrap: nowrap; /* Без переноса на новую строку */
+    overflow-x: hidden; /* Убираем прокрутку */
+    max-width: 100%; /* Ограничение ширины контейнера */
+    padding-bottom: 125px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование текста */
+    margin: 0 30px; /* Отступы между карточками (30px с каждой стороны) */
+    width: 240px; /* Ширина карточки */
+}
+
+.card:first-child {
+    margin-left: 0; /* Убираем отступ слева у первой карточки */
+}
+
+.card:last-child {
+    margin-right: 0; /* Убираем отступ справа у последней карточки */
+}
+
+.logo {
+    position: relative; /* Для абсолютного позиционирования дочерних элементов */
+    width: 98px; /* Задайте ширину кружка */
+    height: 98px; /* Задайте высоту кружка */
+    margin-bottom: 10px; /* Отступ между логотипом и заголовком */
+    display: flex; /* Flex для центрирования содержимого */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.logo svg {
+    width: 100%; /* Занимает всю ширину родителя */
+    height: 100%; /* Занимает всю высоту родителя */
+}
+
+.logo img {
+    position: absolute; /* Изображение также в абсолютном позиционировании */
+    width: 50px; /* Установите ширину изображения */
+    height: auto; /* Сохраняем пропорции */
+    top: 50%; /* Перемещаем в центр по вертикали */
+    left: 50%; /* Перемещаем в центр по горизонтали */
+    transform: translate(-50%, -50%); /* Центрируем по обоим осям */
+}
+
+h4, p {
+    margin: 0; /* Убираем отступы по умолчанию */
+}
+
+.card h4 {
+    margin: 51px 0 12px;
+}
+
+.card p {
+    color: rgba(34, 34, 34, 0.50);
+    text-align: center;
+    width: 240px; /* Уменьшенная ширина текста */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+/*--------------------------------portfolio--------------------------------------*/
+.portfolio {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    margin: 52px 0 ;
+}
+
+.portfolio img {
+    width: 310px; /* Фиксированная ширина */
+    height: 300px; /* Фиксированная высота */
+    margin: 12px; /* Отступы между изображениями (по 12 пикселей с каждой стороны) */
+}
+/*---------------------------------orange-------------------------------------------*/
+.orange{
+    width: 1440px;
+    height: 643px;
+    margin: 113px auto 125px;
+    background: #FF7315;
+    text-align: center;
+}
+.orange h1{
+    width: 609px;
+    color: #F9F9F9;
+    margin: 48px 0 111px;
+    display: inline-block;
+    background: #FF7315;
+}
+.containers{
+    background: #FF7315;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 529px;
+    height: 179px;
+    border-radius: 30px;
+    background: #F9F9F9;
+    margin: 0 41px;
+    padding: 24px 55px 0;
+}
+.container p{
+    color: #222;
+    font-size: 24px;
+}
+/*-------------------------------prices-------------------------------------*/
+.prices h1{
+    text-align: center;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 64px 0 100px;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    height: 500px;
+    border-radius: 15px;
+}
+.plan .caption{
+    display: flex;
+    width: 335px;
+    height: 66px;
+    border-radius: 15px 15px 0 0;
+    background: #FF9B70;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.plan .caption p{
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #F9F9F9;
+    font-size: 24px;
+    background: #FF9B70;
+}
+.price {
+    display: flex;
+    flex-direction: row; /* Устанавливаем горизонтальное направление */
+    align-items: center; /* Центрируем элементы по вертикали */
+    background-color: white;
+    margin: 36px 0 43px;
+}
+.price h2{
+    font-size: 32px;
+    background: white;
+    margin-right: 12px;
+}
+.price p{
+    color: #2B2B2B;
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 15px;
+    background: white;
+}
+.plan .price {
+    flex-direction: row;
+    background-color: white;
+}
+.list{
+    background: white;
+    margin-bottom: 7px;
+}
+.list div{
+    background-color: white;
+    display: flex;
+    flex-direction: row; /* Устанавливаем горизонтальное направление */
+    align-items: center;
+
+}
+.list div {
+    margin-bottom: 16px;
+}
+.list div img{
+    margin-right: 15px;
+}
+.plan .list div img, .list div p{
+    background-color: white;
+}
+/*------------------------------email-----------------------------------*/
+.email {
+    border-radius: 25px;
+    background: #FF7315;
+    width: 1110px;
+    height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email div {
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    flex-direction: row; /* Устанавливаем горизонтальное направление */
+    align-items: center; /* Центрируем элементы по вертикали */
+    background-color: #FF7315;
+    justify-content: space-between;
+    gap: 333px; /* Добавляем пространство между элементами, если нужно */
+}
+.email div p{
+    color: #F9F9F9;
+    font-size: 36px;
+    width: 343px;
+    background: #FF7315;
+}
+.email div button{
+    width: 259px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
+    background: white;
+    border: none;
+    color: black;
+    font-size: 24px;
+}
+/*---------------------------------blog-------------------------------------------*/
+.blog{
+    margin: 125px 0;
+}
+.blog h1{
+    margin-bottom: 48px;
+}
