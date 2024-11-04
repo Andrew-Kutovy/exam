@@ -99,7 +99,7 @@ h1{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 45px; /* 187.5% */
+    line-height: 45px;
     background: #FF7315;
 }
 .advert img{
@@ -126,84 +126,74 @@ h1{
 }
 .cards {
     display: flex;
-    justify-content: space-between; /* Расположение карточек в ряд */
-    align-items: flex-start; /* Вертикальное выравнивание карточек */
-    flex-wrap: nowrap; /* Без переноса на новую строку */
-    overflow-x: hidden; /* Убираем прокрутку */
-    max-width: 100%; /* Ограничение ширины контейнера */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    max-width: 100%;
     padding-bottom: 125px;
 }
-
 .card {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение элементов */
-    align-items: center; /* Центрирование по горизонтали */
-    text-align: center; /* Центрирование текста */
-    margin: 0 30px; /* Отступы между карточками (30px с каждой стороны) */
-    width: 240px; /* Ширина карточки */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 30px;
+    width: 240px;
 }
-
 .card:first-child {
-    margin-left: 0; /* Убираем отступ слева у первой карточки */
+    margin-left: 0;
 }
-
 .card:last-child {
-    margin-right: 0; /* Убираем отступ справа у последней карточки */
+    margin-right: 0;
 }
-
 .logo {
-    position: relative; /* Для абсолютного позиционирования дочерних элементов */
-    width: 98px; /* Задайте ширину кружка */
-    height: 98px; /* Задайте высоту кружка */
-    margin-bottom: 10px; /* Отступ между логотипом и заголовком */
-    display: flex; /* Flex для центрирования содержимого */
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
+    position: relative;
+    width: 98px;
+    height: 98px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .logo svg {
-    width: 100%; /* Занимает всю ширину родителя */
-    height: 100%; /* Занимает всю высоту родителя */
+    width: 100%;
+    height: 100%;
 }
-
 .logo img {
-    position: absolute; /* Изображение также в абсолютном позиционировании */
-    width: 50px; /* Установите ширину изображения */
-    height: auto; /* Сохраняем пропорции */
-    top: 50%; /* Перемещаем в центр по вертикали */
-    left: 50%; /* Перемещаем в центр по горизонтали */
-    transform: translate(-50%, -50%); /* Центрируем по обоим осям */
+    position: absolute;
+    width: 50px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
 h4, p {
-    margin: 0; /* Убираем отступы по умолчанию */
+    margin: 0;
 }
-
 .card h4 {
     margin: 51px 0 12px;
 }
-
 .card p {
     color: rgba(34, 34, 34, 0.50);
     text-align: center;
-    width: 240px; /* Уменьшенная ширина текста */
+    width: 240px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
 }
 /*--------------------------------portfolio--------------------------------------*/
 .portfolio {
     display: flex;
-    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
-    justify-content: center; /* Центрируем содержимое по горизонтали */
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 52px 0 ;
 }
-
 .portfolio img {
-    width: 310px; /* Фиксированная ширина */
-    height: 300px; /* Фиксированная высота */
-    margin: 12px; /* Отступы между изображениями (по 12 пикселей с каждой стороны) */
+    width: 310px;
+    height: 300px;
+    margin: 12px;
 }
 /*---------------------------------orange-------------------------------------------*/
 .orange{
@@ -274,8 +264,8 @@ h4, p {
 }
 .price {
     display: flex;
-    flex-direction: row; /* Устанавливаем горизонтальное направление */
-    align-items: center; /* Центрируем элементы по вертикали */
+    flex-direction: row;
+    align-items: center;
     background-color: white;
     margin: 36px 0 43px;
 }
@@ -302,9 +292,8 @@ h4, p {
 .list div{
     background-color: white;
     display: flex;
-    flex-direction: row; /* Устанавливаем горизонтальное направление */
+    flex-direction: row;
     align-items: center;
-
 }
 .list div {
     margin-bottom: 16px;
@@ -326,12 +315,12 @@ h4, p {
     align-items: center;
 }
 .email div {
-    display: flex; /* Используем flexbox для выравнивания содержимого */
-    flex-direction: row; /* Устанавливаем горизонтальное направление */
-    align-items: center; /* Центрируем элементы по вертикали */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #FF7315;
     justify-content: space-between;
-    gap: 333px; /* Добавляем пространство между элементами, если нужно */
+    gap: 333px;
 }
 .email div p{
     color: #F9F9F9;
@@ -355,4 +344,50 @@ h4, p {
 }
 .blog h1{
     margin-bottom: 48px;
+}
+.blog .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: flex-start;
+}
+.blog .cards .card{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 270px;
+    box-sizing: border-box;
+}
+.blog .cards .card img{
+    background-color: white;
+}
+.blog .cards .card .caption{
+    font-size: 16px;
+    color: black;
+    margin: 24px 0 12px;
+    text-align: left;
+    background-color: white;
+}
+.blog .cards .card .text {
+    color: rgba(34, 34, 34, 0.50);
+    font-kerning: none;
+    font-feature-settings: 'calt' off;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 57px;
+    background-color: white;
+}
+/*------------------------------------------footer---------------------------*/
+footer{
+    width: 1440px;
+    height: 170px;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer p{
+    font-size: 18px;
+    background: #F1F1F1;
 }
